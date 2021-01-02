@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Form from "./Form";
-import ParticlesContainer from "./Particles";
+// import ParticlesContainer from "./Particles";
 
 export class UserSignUp extends Component {
   state = {
@@ -64,7 +64,7 @@ export class UserSignUp extends Component {
             )}
           />
         </div>
-        <ParticlesContainer />
+        {/* <ParticlesContainer /> */}
         <p>
           Already have a user account?{" "}
           <Link className="sign-in-link" to="/signin">

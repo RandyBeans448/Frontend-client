@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ParticlesContainer from "./Particles";
+// import ParticlesContainer from "./Particles";
 import Form from "./Form";
 
 export default class UserSignIn extends Component {
@@ -52,7 +52,7 @@ export default class UserSignIn extends Component {
             to sign up!
           </p>
         </div>
-        <ParticlesContainer />
+        {/* <ParticlesContainer /> */}
       </div>
     );
   }

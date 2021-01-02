@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import ParticlesContainer from "./Particles";
+// import ParticlesContainer from "./Particles";
 
 class Courses extends React.Component {
   state = {
@@ -60,7 +60,7 @@ class Courses extends React.Component {
             </div>
           </div>
         </div>
-        <ParticlesContainer />
+        {/* <ParticlesContainer /> */}
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Data from "../Data";
-import ParticlesContainer from "./Particles";
+// import ParticlesContainer from "./Particles";
 
 export class UpdateCourse extends Component {
   constructor(props) {
@@ -218,7 +218,7 @@ export class UpdateCourse extends Component {
           </div>
           <div id="tsparticles" className="tsparticles" />
         </form>
-        <ParticlesContainer />
+        {/* <ParticlesContainer /> */}
       </div>
     );
   }

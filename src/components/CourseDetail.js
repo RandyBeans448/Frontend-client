@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import ParticlesContainer from "./Particles";
+// import ParticlesContainer from "./Particles";
 const ReactMarkdown = require("react-markdown");
 
 export class CourseDetail extends Component {
@@ -163,7 +163,7 @@ export class CourseDetail extends Component {
               <div id="tsparticles" className="tsparticles"></div>
             </div>
           </div>
-          <ParticlesContainer />
+          {/* <ParticlesContainer /> */}
         </div>
       </div>
     );
