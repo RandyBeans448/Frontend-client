@@ -1,3 +1,3 @@
 export default {
-    apiBaseUrl: 'https://mernfullstackback.herokuapp.com/',
+    apiBaseUrl: 'https://mern-api-backend.herokuapp.com/api',
   };
