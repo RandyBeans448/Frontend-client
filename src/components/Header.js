@@ -1,13 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Data from "../Data";
 
-export default ({ context }) => {
-  const authedUser = context.authenticatedUser;
+export class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.data = new Data();
+    this.state = {
+      authenticatedUser: this.state,
+    };
+  }
 
-  //Nav bar conditionally rendered on if the user is logged in or not
+  
 
-  return (
-    <div>
+  render() {
+    const { context } = this.props;
+    const authedUser = context.authenticatedUser;
+
+    return (
+      <div>
       <div className="header-div">
         <div>
           <Link to="/" className="header-div-left">
@@ -45,5 +56,8 @@ export default ({ context }) => {
         </nav>
       </div>
     </div>
-  );
-};
+    );
+  }
+}
+
+export default Header;
