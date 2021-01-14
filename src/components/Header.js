@@ -16,8 +16,9 @@ export default ({ context }) => {
           </Link>
         </div>
 
-        <nav>
+        {/* <nav>
           {authedUser ? (
+            <React.Fragment>
               <div className="header-div-right">
                 <span className="header-div-right">
                   
@@ -28,8 +29,9 @@ export default ({ context }) => {
                   Sign Out
                 </Link>
               </div>
-            
+            </React.Fragment>
           ) : (
+            <React.Fragment> */}
               <div className="header-div-right-up-in">
                 <Link className="header-div-right" to="/signup">
                   Sign Up
@@ -38,9 +40,9 @@ export default ({ context }) => {
                   Sign In
                 </Link>
               </div>
-            
-          )}
-        </nav>
+            {/* </React.Fragment> */}
+          {/* )}
+        </nav> */}
       </div>
     </div>
   );
