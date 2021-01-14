@@ -10,10 +10,10 @@ export default ({ context }) => {
     <div>
       <div className="header-div">
         <div>
-          <Link to="/" className="header-div-left">
+          <a to="/" className="header-div-left">
             {" "}
             Student Courses{" "}
-          </Link>
+          </a>
         </div>
 
         <nav>
