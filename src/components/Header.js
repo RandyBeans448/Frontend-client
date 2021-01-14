@@ -10,28 +10,26 @@ export default ({ context }) => {
     <div>
       <div className="header-div">
         <div>
-          <a to="/" className="header-div-left">
-            {" "}
-            Student Courses{" "}
-          </a>
+          <Link to="/" className="header-div-left">
+            
+            Student Courses
+          </Link>
         </div>
 
         <nav>
           {authedUser ? (
-            <React.Fragment>
               <div className="header-div-right">
                 <span className="header-div-right">
-                  {" "}
-                  Welcome {authedUser.firstName} {authedUser.lastName}{" "}
+                  
+                  Welcome {authedUser.firstName} {authedUser.lastName}
                 </span>
                 <Link className="header-div-right" to="/signout">
-                  {" "}
-                  Sign Out{" "}
+                  
+                  Sign Out
                 </Link>
               </div>
-            </React.Fragment>
+            
           ) : (
-            <React.Fragment>
               <div className="header-div-right-up-in">
                 <Link className="header-div-right" to="/signup">
                   Sign Up
@@ -40,7 +38,7 @@ export default ({ context }) => {
                   Sign In
                 </Link>
               </div>
-            </React.Fragment>
+            
           )}
         </nav>
       </div>
