@@ -29,6 +29,7 @@ lets the components UserSignIn & UserSignUp gain access to
 the function in context and any data or actions passed into
 <Context.Provider value={value}> */
 
+const HeaderWithContext = withContext(Header);
 const UserSignInWithContext = withContext(UserSignIn);
 const UserSignUpWithContext = withContext(UserSignUp);
 const UserSignOutWithContext = withContext(UserSignOut);
@@ -36,7 +37,7 @@ const UserSignOutWithContext = withContext(UserSignOut);
 /* To let the user know they are signed in
 need to make changes to the name display in the end header */
 
-const HeaderWithContext = withContext(Header);
+
 const CoursesWithContext = withContext(Courses);
 const CourseDetailsWithContext = withContext(CourseDetail);
 const UpdateCourseWithContext = withContext(UpdateCourse)
