@@ -1,7 +1,8 @@
+import Header from './Header';
+import withContext from '../Context';
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Data from "../Data";
-// import ParticlesContainer from "./Particles";
 
 export class CreateCourse extends Component {
   constructor(props) {
@@ -24,11 +25,10 @@ export class CreateCourse extends Component {
   }
 
   componentDidMount() {
+    
     /*
-
     State for password, emailAddress and userId set from the details
     from the logged in user
-
     */
 
     const { context } = this.props;
@@ -111,8 +111,10 @@ export class CreateCourse extends Component {
         );
       });
     }
-
+    const HeaderWithContext = withContext(Header);
     return (
+      <div>
+            <HeaderWithContext/>
       <div id="tsparticles" className="tsparticles">
         <h1 className="create-h1"> Create course </h1>
         {errorList}
@@ -178,10 +180,11 @@ export class CreateCourse extends Component {
             </NavLink>
           </div>
         </form>
-        {/* <ParticlesContainer /> */}
+      </div>
       </div>
     );
   }
 }
 
 export default CreateCourse;
+
