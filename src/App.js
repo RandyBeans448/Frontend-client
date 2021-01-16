@@ -44,8 +44,8 @@ const CreateCourseWithContext = withContext(CreateCourse)
 
 export default () => (
   <Router>
-    <div >
     <HeaderWithContext/>
+    <div >
       <Switch>
         <Route exact path="/" component={CoursesWithContext} />
         <PrivateRoute path="/courses/create" component={CreateCourseWithContext} />
