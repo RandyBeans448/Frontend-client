@@ -1,5 +1,3 @@
-import Header from './Header';
-import withContext from '../Context';
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Data from "../Data";
@@ -111,10 +109,8 @@ export class CreateCourse extends Component {
         );
       });
     }
-    const HeaderWithContext = withContext(Header);
+
     return (
-      <div>
-            <HeaderWithContext/>
       <div id="tsparticles" className="tsparticles">
         <h1 className="create-h1"> Create course </h1>
         {errorList}
@@ -181,10 +177,8 @@ export class CreateCourse extends Component {
           </div>
         </form>
       </div>
-      </div>
     );
   }
 }
 
 export default CreateCourse;
-
