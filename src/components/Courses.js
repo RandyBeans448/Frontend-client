@@ -51,7 +51,7 @@ class Courses extends React.Component {
     }
 
     return (
-      <div id="tsparticles" className="tsparticles">
+      <div>
         <div className="course-list-div">
           <div className="table">
             {mappedCourses}
