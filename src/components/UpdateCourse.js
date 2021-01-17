@@ -216,7 +216,6 @@ export class UpdateCourse extends Component {
               Cancel
             </NavLink>
           </div>
-          <div id="tsparticles" className="tsparticles" />
         </form>
         {/* <ParticlesContainer /> */}
       </div>
