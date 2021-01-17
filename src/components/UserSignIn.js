@@ -14,7 +14,7 @@ export default class UserSignIn extends Component {
     const { errors } = this.state;
 
     return (
-      <div id="tsparticles" className="tsparticles">
+      <div >
         <div className="sign-in-div">
           <h1 className="sign-in-h1">Sign In</h1>
           <Form
